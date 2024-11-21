@@ -1,7 +1,5 @@
-using System;
 using DG.Tweening;
 using UnityEngine;
-
 public abstract class BaseBox : MonoBehaviour
 {
     protected virtual void Start()
@@ -9,7 +7,9 @@ public abstract class BaseBox : MonoBehaviour
         BaseBox.currentBaseBox = this;
         this.OnStart();
     }
-
+/// <summary>
+/// ////////////////////////
+/// </summary>
     public virtual void OnClickCloseButton()
     {
         this.CloseBox();
